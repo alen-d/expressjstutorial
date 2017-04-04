@@ -1,0 +1,22 @@
+{
+  "name": "expresstutorial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "~2.5.6",
+    "express": "*",
+    "express-validator": "*",
+    "mersennetwister": "^0.2.3",
+    "moment": "^2.18.1",
+    "mongojs": "^2.4.0",
+    "socket.io": "^1.7.3"
+  }
+}

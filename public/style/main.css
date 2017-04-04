@@ -1,0 +1,100 @@
+body {
+    margin: 5% 10%;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+#left_panel,
+#right_panel {
+    float: left;
+}
+
+#right_panel {
+    margin-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#number_holders li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+#round_title,
+#round_no {
+    font-size: 24px;
+}
+
+.round_result {
+    margin-top: 5px;
+}
+
+#bottom_panel {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.lucky_numbers_wrap {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+
+.lucky_numbers_wrap input {
+    width: 35px;
+    height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+.lucky_numbers_wrap input[type=number]::-webkit-inner-spin-button,
+.lucky_numbers_wrap input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#send_ticket {
+    width: 50px;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+#error_message {
+    float: left;
+    color: red;
+    margin: 5px 0 0 15px;
+}
+
+#recent_tickets {
+    border-collapse: collapse;
+}
+
+#recent_tickets thead {
+    font-weight: bold;
+}
+
+#recent_tickets td {
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+#recent_tickets_container {
+
+}

@@ -1,0 +1,194 @@
+<% include partials/header %>
+    <h1>Lucky Numbers Draw</h1>
+
+    <div id="left_panel">
+        <br>
+        <a id="round_title">Round: <span id="round_no"></span></a>
+
+        <div id="number_holders">
+            <ul>
+                <li class="number_holder number-1"></li>
+                <li class="number_holder number-2"></li>
+                <li class="number_holder number-3"></li>
+                <li class="number_holder number-4"></li>
+                <li class="number_holder number-5"></li>
+                <li class="number_holder number-6"></li>
+                <li class="number_holder number-7"></li>
+            </ul>
+            <ul>
+                <li class="number_holder number-8"></li>
+                <li class="number_holder number-9"></li>
+                <li class="number_holder number-10"></li>
+                <li class="number_holder number-11"></li>
+                <li class="number_holder number-12"></li>
+                <li class="number_holder number-13"></li>
+                <li class="number_holder number-14"></li>
+            </ul>
+            <ul>
+                <li class="number_holder number-15"></li>
+                <li class="number_holder number-16"></li>
+                <li class="number_holder number-17"></li>
+                <li class="number_holder number-18"></li>
+                <li class="number_holder number-19"></li>
+                <li class="number_holder number-20"></li>
+                <li class="number_holder number-21"></li>
+            </ul>
+            <ul>
+                <li class="number_holder number-22"></li>
+                <li class="number_holder number-23"></li>
+                <li class="number_holder number-24"></li>
+                <li class="number_holder number-25"></li>
+                <li class="number_holder number-26"></li>
+                <li class="number_holder number-27"></li>
+                <li class="number_holder number-28"></li>
+            </ul>
+            <ul>
+                <li class="number_holder number-29"></li>
+                <li class="number_holder number-30"></li>
+                <li class="number_holder number-31"></li>
+                <li class="number_holder number-32"></li>
+                <li class="number_holder number-33"></li>
+                <li class="number_holder number-34"></li>
+                <li class="number_holder number-35"></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <label>Lucky Numbers</label>
+        <div class="lucky_numbers_wrap">
+            <input class="number" type="number" name="number-1">
+            <input class="number" type="number" name="number-2">
+            <input class="number" type="number" name="number-3">
+            <input class="number" type="number" name="number-4">
+            <input class="number" type="number" name="number-5">
+            <input class="number" type="number" name="number-6">
+        </div>
+        <br>
+        <input id="send_ticket" type="submit" value="Send">
+        <span id="error_message"></span>
+    </div>
+
+    <div id="right_panel">
+        <h2>Last 10 rounds results</h2>
+        <ul>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+            <li class="round_result"></li>
+        </ul>
+
+        <br>
+
+        <h2>Last 10 added tickets</h2>
+        <!--<ul>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+            <!--<li class="recent_ticket"></li>-->
+        <!--</ul>-->
+
+        <table id="recent_tickets">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>ROUND</td>
+                    <td>NUMBERS</td>
+                    <td>STATUS</td>
+                </tr>
+                <tr id="recent_ticket_template" class="hidden">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="recent_tickets_container">
+                <!--<tr>-->
+                    <!--<td>100</td>-->
+                    <!--<td>999</td>-->
+                    <!--<td>42, 43, 44, 45, 46, 47, 48</td>-->
+                    <!--<td>IN PLAY</td>-->
+                <!--</tr>-->
+            </tbody>
+        </table>
+
+    </div>
+    <!--<div id="bottom_panel">-->
+        <!--<label>Lucky Numbers</label>-->
+        <!--<div class="lucky_numbers_wrap">-->
+            <!--<input class="number" type="number" name="number-1">-->
+            <!--<input class="number" type="number" name="number-2">-->
+            <!--<input class="number" type="number" name="number-3">-->
+            <!--<input class="number" type="number" name="number-4">-->
+            <!--<input class="number" type="number" name="number-5">-->
+            <!--<input class="number" type="number" name="number-6">-->
+        <!--</div>-->
+        <!--<input id="send_ticket" type="submit" value="Send">-->
+        <!--<span id="error_message"></span>-->
+    <!--</div>-->
+    <!--<ul>-->
+        <!--<li class="number_holder number-36"></li>-->
+    <!--</ul>-->
+    <!--<ul>-->
+        <!--<li class="number_holder number-37"></li>-->
+        <!--<li class="number_holder number-38"></li>-->
+        <!--<li class="number_holder number-39"></li>-->
+        <!--<li class="number_holder number-40"></li>-->
+        <!--<li class="number_holder number-41"></li>-->
+        <!--<li class="number_holder number-42"></li>-->
+    <!--</ul>-->
+    <!--<ul>-->
+        <!--<li class="number_holder number-43"></li>-->
+        <!--<li class="number_holder number-44"></li>-->
+        <!--<li class="number_holder number-45"></li>-->
+        <!--<li class="number_holder number-46"></li>-->
+        <!--<li class="number_holder number-47"></li>-->
+        <!--<li class="number_holder number-48"></li>-->
+    <!--</ul>-->
+
+    <% if(errors) {%>
+        <ul>
+            <% errors.forEach(function(error) { %>
+            <li><%= error.msg %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <p id="lucky_numbers"></p>
+
+    <form method="POST" action="/" class="hidden">
+        <label>First Name</label>
+        <input type="text" name="first_name">
+        <br>
+        <label>Last Name</label>
+        <input type="text" name="last_name">
+        <br>
+        <label>Email</label>
+        <input type="email" name="email">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <ul class="hidden">
+        <% users.forEach(function(user) { %>
+            <li>
+                <%= user.first_name%>
+                <%= user.last_name%>
+                - <a href="#" class="deleteUser" data-id="<%= user._id%>">Delete</a>
+            </li>
+        <% }) %>
+    </ul>
+<% include partials/footer %>
